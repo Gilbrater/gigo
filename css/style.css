@@ -55,7 +55,7 @@ h2:after {
     height: 2px;
     background-color: #34c6d3;
     content: "";
-    width: 70px;
+    width: 30px;
     margin: 20px auto 0 auto;
 }
 
@@ -226,7 +226,7 @@ SECTION ABOUT
 SECTION WORK
 ========================================================*/
 
-figure{
+.section-work figure{
     width:100%;
     height:200px;
     overflow: hidden;
