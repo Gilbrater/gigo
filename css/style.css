@@ -220,3 +220,34 @@ SECTION ABOUT
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/*========================================================
+SECTION WORK
+========================================================*/
+
+figure{
+    width:100%;
+    height:200px;
+    overflow: hidden;
+}
+
+.section-work img{
+    width:100%;
+    height:auto;
+    opacity:0.7;
+    transition: 0.4s;
+    transform: scale(1.7);
+}
+
+.section-work img:hover{
+    width:100%;
+    height:auto;
+    opacity:1;
+    transform: scale(1.5);
+}
+
+.section-work [class*=col-]{
+    padding: 0;
+    margin:0;
+}
