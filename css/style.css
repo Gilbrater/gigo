@@ -1,0 +1,222 @@
+/*========================================================
+DEFAULT VALUES
+
+Font Family :Lato
+Greenish Blue   : #34c6d3 (Buttons, Icons, Links, Lines and Backgrounds)
+Steel Gray      : #41464b (Headings)
+Blue Bayoux     : #64707b (Paragraphs)
+White           : #fff    (Text With Black Backgrounds)
+Black           : #000
+========================================================*/
+
+
+/* General */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#home {
+    margin-top: -20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)), url(../images/bg-home.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    font-size: 220%;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #41464b;
+    font-size: 130%;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #34c6d3;
+    content: "";
+    width: 70px;
+    margin: 20px auto 0 auto;
+}
+
+p {
+    font-size: 70%;
+    color: #64707b;
+    display: table;
+}
+
+/* PARALLAX */
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+
+/* BUTTONS */
+
+a:link,
+a:visited {
+    padding: 5px 10px;
+    border: 1px solid #34c6d3;
+    color: #34c6d3;
+    font-weight: 300;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-size:70%;
+    word-spacing: 2px;
+}
+
+a:hover,
+a:active {
+    background-color: #34c6d3 !important;
+    color: #fff !important; 
+}
+
+.btn-ghost-white:link,
+.btn-ghost-white:visited {
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    transition: 0.4s;
+}
+
+.btn-ghost-white:hover,
+.btn-ghost-white:active {
+    background-color: #fff !important;
+    color: #34c6d3 !important;
+    border: 1px solid #34c6d3 !important;
+}
+
+
+/*========================================================
+SECTION HOME
+========================================================*/
+
+#home-content-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home-content-box .btn-ghost {
+    margin-top: 20px;
+}
+
+
+/*========================================================
+ANIMATIONS
+========================================================*/
+
+.speed1 {
+    animation-duration: 0.5s;
+    animation-delay: 0.1s
+}
+
+.speed2 {
+    animation-duration: 0.5s;
+    animation-delay: 0.5s
+}
+
+.speed3 {
+    animation-duration: 0.5s;
+    animation-delay: 1s
+}
+
+.speed4 {
+    animation-duration: 0.5s;
+    animation-delay: 1.5s
+}
+
+
+/*========================================================
+SECTION SERVICES
+========================================================*/
+
+.box {
+    padding: 15px;
+    vertical-align: middle;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.box i {
+    display: inline-block;
+    color: #34c6d3;
+    margin-right: 20px;
+    float: left;
+    line-height: inherit;
+    padding: 8px 15px
+}
+
+.box i:hover,
+.box i:active {
+    display: inline-block;
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.box span {
+    display: block;
+    text-align: left;
+    color: #41464b;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+
+/*========================================================
+SECTION ABOUT
+========================================================*/
+
+#about-left{
+    height: 600px;
+    display:table;
+    text-align: left;
+    width: 30%;
+    float:left;
+    margin-left:80px;
+}
+
+#about-left .row{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about-left .col-md-4{
+    width: 70%;
+}
+
+.about-bg-diagonal{
+    width:60%;
+    display:inline-block;
+    height:600px;
+    border-top:700px solid rgba(255, 255, 255, 0);
+    border-left: 250px solid #fff;
+    background-image: url(../images/bg-about.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
